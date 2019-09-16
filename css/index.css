@@ -1,0 +1,318 @@
+/********************通用的样式********************/
+body{
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+}
+.btn-register { 
+    color: #FFFFFF; 
+    background-color: #0AB4F7; 
+
+  } 
+  @font-face{
+    font-family: lk;
+    src: url(../fonts/lk.eot) format('embedded-opentype'),
+    url(../fonts/lk.svg) format('svg'),
+    url(../fonts/lk.ttf) format('truetype'),
+    url(../fonts/lk.woff) format('woff');
+  }
+  
+  [class^='icon-'],
+  [class^=' icon-']{
+    font-family: lk;
+    font-style: normal;
+  }
+  .icon-phone::before{
+    content: '\e958';
+    font-size: 13px;
+  }
+  .icon-tel::before{
+    content: '\e942';
+    font-size: 13px;
+  }
+  
+   
+  .btn-register:hover, 
+  .btn-register:focus, 
+  .btn-register:active, 
+  .btn-register.active, 
+  .open .dropdown-toggle.btn-register { 
+    color: #FFFFFF; 
+    background-color: #086df2; 
+  } 
+   
+  .btn-register:active, 
+  .btn-register.active, 
+  .open .dropdown-toggle.btn-register { 
+    background-image: none; 
+  } 
+   
+  .btn-register.disabled, 
+  .btn-register[disabled], 
+  fieldset[disabled] .btn-register, 
+  .btn-register.disabled:hover, 
+  .btn-register[disabled]:hover, 
+  fieldset[disabled] .btn-register:hover, 
+  .btn-register.disabled:focus, 
+  .btn-register[disabled]:focus, 
+  fieldset[disabled] .btn-register:focus, 
+  .btn-register.disabled:active, 
+  .btn-register[disabled]:active, 
+  fieldset[disabled] .btn-register:active, 
+  .btn-register.disabled.active, 
+  .btn-register[disabled].active, 
+  fieldset[disabled] .btn-register.active { 
+    background-color: #0AB4F7; 
+  } 
+   
+  .btn-register .badge { 
+    color: #0AB4F7; 
+    background-color: #FFFFFF; 
+  }
+
+/********************通用的样式********************/
+
+
+/********************头部的样式********************/
+#lk_header{
+
+}
+
+#lk_header .top-bar{
+
+    width: 100%;
+    line-height: 39px;
+    border: 1px solid #e0e0e0;
+}
+#lk_header .top-bar .container .row>div+div{
+    border-left: 1px solid #e0e0e0;
+}
+#lk_header .top-bar .container .row .top-bar-1 a{
+    position: relative;
+}
+#lk_header .top-bar .container .row .top-bar-1 a img{
+    position: absolute;
+    display: none;
+    left: -27px;
+    margin-top: -10px;
+    z-index: 9999;
+}
+
+
+#lk_header .top-bar .container .row .top-bar-1 a:hover img{
+    display: block;
+}
+
+#lk_header .navbar-lk{
+  margin-bottom: 0;
+  background-color: #fff;
+}
+#lk_header .navbar-lk .navbar-brand{
+  height: 70px;
+  padding: 10px 15px;
+}
+#lk_header .navbar-lk .navbar-nav a{
+  line-height: 40px;
+  height: 70px;
+}
+#lk_header .navbar-lk .navbar-nav li.active a,
+#lk_header .navbar-lk .navbar-nav li a:hover{
+  background-color: transparent;
+  border-bottom: 2px solid #0ab4f7;
+}
+
+#lk_header .navbar-lk .navbar-toggle {
+  margin-top: 17px;
+}
+
+
+
+
+/********************头部的样式********************/
+
+
+/******************** 轮播图 *********************/
+#lk_carousel{
+
+}
+#lk_carousel .item {
+  /* 是每一个item居中 */
+  background: no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+@media screen and ( min-width:800px){
+  #lk_carousel .item {
+    height: 410px;
+  }
+}
+/******************** 轮播图 *********************/
+
+
+
+/******************** 关于我们 *********************/
+#lk_about{
+  padding: 20px 0;
+}
+#lk_about .title{
+  display: flex;
+  flex-direction: column;/*竖直分布*/
+  justify-content: center;/*主轴居中*/
+  align-items: center;/*侧轴居中*/
+  padding-bottom: 15px;
+}
+#lk_about .row p{
+  line-height: 29px;
+  font-size: 15px;
+}
+/******************** 关于我们 *********************/
+
+/******************** 产品特色 *********************/
+#lk_product{
+  background-color: #f0f0f0;
+  padding: 30px 0;
+}
+#lk_product .container  .nav a{
+  color: #999;
+  font-size: 18px;
+}
+#lk_product .nav li.active a{
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid #0ab4f7;
+  color: #000;
+}
+#lk_product .tab-content #pd_one_1{
+  padding-top: 30px;
+}
+#lk_product .tab-content .media-body{
+  vertical-align:bottom;
+}
+#lk_product .tab-content .media-body h4{
+  font-size: 14px;
+  color: #777;
+}
+#lk_product .tab-content #pd_one_2{
+  background-color: #f0f0f0;
+  padding: 40px 0;
+}
+#lk_product .tab-content #pd_one_4{
+  padding: 40px;
+}
+#lk_product .tab-content #pd_one_4 button{
+  margin-left: 30px;
+}
+#lk_product .tab-content .container .row .col-md-4{
+  padding: 40px 0;
+}
+#lk_product .tab-content #pd_two{
+  padding: 90px 0;
+} 
+#lk_product .tab-content #pd_two p{
+  margin-bottom: 24px;
+  font-size: 21px;
+  font-weight: 300;
+  line-height: 1.4;
+}
+#lk_product .tab-content #product2 .text-danger{
+  color: #a94442;
+}
+#lk_product .tab-content #product2 .col-md-6{
+  margin-top: 60px;
+}
+/******************** 产品特色 *********************/
+
+
+
+
+/******************** 热门课程 *********************/
+#lk_hot{
+
+}
+#lk_hot .row{
+  margin-top: 20px;
+}
+#lk_hot .row .col-md-6{
+  margin-top: 20px;
+}
+#lk_hot .title img{
+  margin: 0 auto;
+}
+#lk_hot .media-body h4{
+  font-size: 18px;
+}
+#lk_hot .media-body p{
+  font-size: 14px;
+  color: #777;
+}
+#lk_hot .media-right{
+  font-size: 16px;
+  width: 20%;
+}
+
+/******************** 热门课程 *********************/
+
+
+
+/******************** 友情链接 *********************/
+#lk_link{
+
+}
+#lk_link ul{
+  text-align: center;
+  height: 64px;
+  list-style: none;  
+}
+#lk_link .title img{
+  margin: 0 auto;
+}
+#lk_link .container .loges img{
+}
+#lk_link ul li{
+  display: inline-block;
+  padding: 20px 30px;
+  margin: 0 auto;
+}
+/******************** 友情链接 *********************/
+
+
+
+
+/******************** 友情链接 *********************/
+#lk_footer{
+  border-right: 1px solid #666;
+  background: url(ft_bg.png) no-repeat center;
+  height: 180px;
+  width: 100%;
+  color: #fff;
+  font-size: 14px;
+}
+#lk_footer ul{
+  list-style: none;
+}
+#lk_footer ul li{
+  padding: 12px;
+}
+#lk_footer ul li a{
+  color: #fff;
+}
+#lk_footer .two{
+  margin-top: 20px;
+}
+#lk_footer .three{
+  margin-top: 30px;
+}
+#lk_footer .one,#lk_footer .two{
+  padding: 20px;
+}
+#lk_footer .one,#lk_footer .two,#lk_footer .three{
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  /* display: inline-block; */
+  text-align: center;
+}
+/******************** 友情链接 *********************/
+
